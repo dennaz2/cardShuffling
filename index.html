@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card Shuffling</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <section class="dealing-cards">
+        <h1>Dealing Cards</h1>
+        <form action="shuffle.php" method="post">
+            <label for="players">Choose the number of players:</label>
+            <select name="players" id="players">
+                <option value="1">1 Player</option>
+                <option value="2">2 Players</option>
+                <option value="3">3 Players</option>
+                <option value="4">4 Players</option>
+                <option value="5">5 players</option>
+            </select>
+            <label for="cards">Choose the number of cards to feal to each player: </label>
+            <select name="cards" id="cards">
+                <option value="5">5 Cards</option>
+                <option value="7">7 Cards</option>
+                <option value="9">9 Cards</option>
+            </select>
+            <button type="submit">Generate</button>
+
+        </form>
+    </section>
+
+    <section class="shuffled-cards none">
+
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
